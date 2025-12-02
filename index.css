@@ -115,13 +115,12 @@ border-radius: 25px;
     justify-content: center;
     align-items: center;
 
-    /* Local background image */
-    background-image: url('dog.jpeg'); /* Make sure nami.jpg is in the same folder as index.css */
+    background-image: url('img.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    /* Optional overlay */
+    
     position: relative;
 }
 
@@ -132,7 +131,7 @@ border-radius: 25px;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(139, 69, 19, 0.4); /* semi-transparent overlay */
+    background-color: rgba(139, 69, 19, 0.4); 
     z-index: 1;
 }
 
