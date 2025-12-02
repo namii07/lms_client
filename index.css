@@ -1,5 +1,221 @@
-.Student{
-    font-family: Arial, Helvetica, sans-serif;
-    color:darkred;
-   font-size: 50px;
+.stud {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: palevioletred;
+    font-size: xx-large;
+}
+
+.container {
+    border: 2px solid black;
+    height:500px;
+    width:500px;
+    margin:100px 200px 100px 200px;
+    background-color:beige;
+    padding:20px;
+    color:rgba(107, 47, 47, 0.847);
+} */
+
+  body{
+    margin:0;
+    padding:0;
+ }
+.signup-container{
+    height:100vh;
+    background-color:brown;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.signup{
+
+    border:none;
+    height:500px;
+    width:500px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-color:bisque;
+    gap:25px;
+    box-shadow:50px 50px 100px rgb(77, 58, 35);
+    border-radius:20px;
+}
+.data{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:center;
+    justify-content:center;
+}
+.but{
+    background-color:burlywood;
+    display:flex;
+    width:100%;
+    justify-content:center;
+    color:azure;
+}
+
+.data input{
+    border:none;
+    border-radius:10px;
+    height:25px;
+}
+.data label{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bolder;
+
+}
+.outer{
+    height:1000px;
+    width:1000px;
+    background-color:brown;
+    position:absolute;
+    
+}
+.inner{
+    height:100px;
+    width:100px;
+    background-color:beige;
+    position:sticky;
+    top:20px;
+}
+
+.header-container{
+background-color:brown;
+height:100px;
+display: flex;
+justify-content: space-around;
+border-radius: 25px;
+}
+.head-items{
+    background-color:bisque;
+    
+}
+.logo-image{
+    height: 100px; 
+    width: 100px;
+}
+.head-items{
+    display:flex;
+    align-items: center;
+    gap:25px;
+}
+.head-items li{
+    list-style:none;
+    font-size:20px;
+}
+.head-container{
+    display:flex;
+    align-items: center;
+}
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Local background image */
+    background-image: url('dog.jpeg'); /* Make sure nami.jpg is in the same folder as index.css */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Optional overlay */
+    position: relative;
+}
+
+.login-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(139, 69, 19, 0.4); /* semi-transparent overlay */
+    z-index: 1;
+}
+
+.login-box {
+    position: relative;
+    z-index: 2;
+}
+
+
+.login-container{
+    height:100vh;
+    background-color:brown;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+    height:380px;
+    width:400px;
+    background-color:bisque;
+    border-radius:20px;
+    box-shadow:50px 50px 100px rgb(77, 58, 35);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    padding:20px;
+}
+
+.login-box h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.login-data{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    padding:0 25px;
+}
+
+.login-data label{
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.login-data input{
+    border:none;
+    border-radius:10px;
+    height:30px;
+    padding-left:10px;
+}
+
+.login-button{
+    width:80%;
+    height:40px;
+    background-color:brown;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    margin-top:10px;
+}
+
+.login-button:hover{
+    background-color:rgb(120, 35, 35);
+}
+
+.login-link{
+    font-size:14px;
+}
+
+.login-link a{
+    color:brown;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.login-link a:hover{
+    text-decoration:underline;
 }
