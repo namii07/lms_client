@@ -3,32 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Login - GAP × Katseye</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-
-    <div class="login-container">
-        <div class="login-box">
-            <h2>Login</h2>
-
-            <div class="login-data">
-                <label>Email</label>
-                <input type="email" placeholder="Enter email">
-
-                <label>Password</label>
-                <input type="password" placeholder="Enter password">
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://i.pinimg.com/1200x/f3/76/67/f376676dc34b6cf28f881fbef4d88070.jpg" alt="GAP × Katseye Logo">
             </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </div>
+    </nav>
 
-            <button class="login-button">Login</button>
-
-            <p class="login-link">Don't have an account? 
-                <a href="signup.html">Sign Up</a>
-            </p>
+    
+    <div class="form-container">
+        <video class="form-background" autoplay muted loop playsinline>
+            <source src="https://youtu.be/IwzF26o0AuU?si=BMBXxKa9FMxPcgGk" type="video/mp4">
+        </video>
+        <div class="form-overlay"></div>
+        
+        <div class="form-box">
+            <h2>Welcome Back</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <input type="email" 
+                           name="email" 
+                           placeholder="Email Address" 
+                           required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="password" 
+                           name="password" 
+                           placeholder="Password" 
+                           required>
+                    <button type="button" class="password-toggle">👁️</button>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                    Sign In
+                </button>
+            </form>
+            
+            <div class="form-links">
+                <p><a href="#" onclick="alert('Password reset functionality would be implemented here')">Forgot Password?</a></p>
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </div>
         </div>
     </div>
 
+    <script src="scripts/script.js"></script>
 </body>
 </html>
-
-

@@ -1,63 +1,79 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-
-<body class="signup-container">
-    <div class="signup">
-        <div class="data">
-            <label for="name"> Name : </label>
-            <input type="text"><br>
-            <label for="email"> Email : </label>
-            <input type="email"><br>
-            <label fpr="pass"> New Password : </label>
-            <input type="password"><br>
-        </div>
-        <div class="but">
-            <button>Signup</button>
-        </div>
-    </div>
-</body>
-
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Sign Up - GAP × Katseye</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-
-<body class="signup-container">
-    <div class="signup">
-        <div class="data">
-            <label for="name">Name :</label>
-            <input type="text">
-
-            <label for="email">Email :</label>
-            <input type="email">
-
-            <label for="pass">New Password :</label>
-            <input type="password">
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://i.pinimg.com/1200x/f3/76/67/f376676dc34b6cf28f881fbef4d88070.jpg" alt="GAP × Katseye Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="but">
-            <button>Signup</button>
+   
+    <div class="form-container">
+        <img src="https://i.pinimg.com/1200x/79/81/c7/7981c7c0498b35f38a96e7cad4a961f4.jpg" 
+             alt="Fashion Background" 
+             class="form-background">
+        <div class="form-overlay"></div>
+        
+        <div class="form-box">
+            <h2>Join GAP × Katseye</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <input type="text" 
+                           name="name" 
+                           placeholder="Full Name" 
+                           required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" 
+                           name="email" 
+                           placeholder="Email Address" 
+                           required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="password" 
+                           name="password" 
+                           placeholder="Create Password" 
+                           required>
+                    <button type="button" class="password-toggle">👁️</button>
+                </div>
+                
+                <div class="form-group">
+                    <input type="password" 
+                           name="confirm-password" 
+                           placeholder="Confirm Password" 
+                           required>
+                    <button type="button" class="password-toggle">👁️</button>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                    Create Account
+                </button>
+            </form>
+            
+            <div class="form-links">
+                <p>Already have an account? <a href="login.html">Sign In</a></p>
+            </div>
         </div>
-
-        <p class="login-link">Already have an account? 
-            <a href="login.html">Login</a>
-        </p>
     </div>
-</body>
 
+    <script src="scripts/script.js"></script>
+</body>
 </html>
